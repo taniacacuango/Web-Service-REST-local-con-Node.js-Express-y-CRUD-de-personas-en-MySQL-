@@ -1,6 +1,9 @@
 import dotenv from 'dotenv';
 
-dotenv.config();
+const result = dotenv.config();
+
+console.log('DOTENV:', result);
+console.log('DB_USER:', process.env.DB_USER);
 
 import app from './app.js';
 

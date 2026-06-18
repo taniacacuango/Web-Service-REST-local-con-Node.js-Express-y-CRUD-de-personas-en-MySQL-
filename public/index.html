@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Personas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>CRUD Personas</h1>
+
+    <form id="personaForm">
+        <input type="text" id="cedula" placeholder="Cédula" required>
+
+        <input type="text" id="apellidos" placeholder="Apellidos" required>
+
+        <input type="text" id="nombres" placeholder="Nombres" required>
+
+        <input type="date" id="fechaNacimiento" required>
+
+        <input type="text" id="direccion" placeholder="Dirección" required>
+
+        <input type="text" id="ciudad" placeholder="Ciudad" required>
+
+        <button type="submit">
+            Guardar
+        </button>
+    </form>
+
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cédula</th>
+                <th>Apellidos</th>
+                <th>Nombres</th>
+                <th>Fecha Nacimiento</th>
+                <th>Dirección</th>
+                <th>Ciudad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaPersonas">
+
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
